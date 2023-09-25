@@ -1,0 +1,25 @@
+
+@mixin margins {
+    .m {
+        &-bottom {
+            &-24 {
+                margin-bottom: $size-24;
+            }
+        }
+        &-top {
+            &-16 {
+                margin-top: $size-16;
+            }
+        }
+    }
+}
+@mixin paddings {
+    .p {
+        &-horizontal{
+            &-16 {
+                padding: 0 $size-16;
+            }
+        }
+    }
+}
+
