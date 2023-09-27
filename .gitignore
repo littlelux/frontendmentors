@@ -36,6 +36,9 @@ yarn-error.log
 /libpeerconnection.log
 testem.log
 /typings
+/02-results-summary/resources
+/03-skilled-elearning-landing-page/resources
+/01-qr-code/resources
 
 # System files
 .DS_Store
