@@ -96,10 +96,11 @@
         width: 315px;
         height: 56px;
         color: white;
-        background-color: $darkNavy;
+        background: $darkNavy;
         border-style: unset;
         margin: 24px 30px;
-        @include media(">phone") {
+        cursor: pointer;
+        &:hover {
             background: linear-gradient(180deg, #75F 0%, #6943FF 0.01%, #2F2CE9 100%);
         }
     }
