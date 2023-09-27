@@ -1,0 +1,17 @@
+@import 'include-media';
+@import 'units';
+@import 'fonts';
+@import 'charte';
+@import 'layout';
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    @include margins;
+    @include paddings;
+}
+
+html {
+    font-size: 62.5%;
+}

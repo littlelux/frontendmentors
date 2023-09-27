@@ -1,0 +1,99 @@
+@import 'include-media';
+@import 'charte';
+@import 'units';
+
+:host {
+    display: flex;
+    flex-direction: column;
+    gap: $size-16;
+    width: 100%;
+    @include media(">phone") {
+            width:auto;
+            height: 100%;
+    }
+    .wrapper-summary {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        @include media(">phone") {
+                height: 100%;
+                justify-content: space-between;
+        }
+    }
+    .container-heading {
+        display: flex;
+        width: 100%;
+        padding: 0 32px;
+        margin: 24px 32px;
+    }
+    .container-summary {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: $size-16;
+        @include media(">phone") {
+            display: flex;
+        }
+        .result-bar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 315px;
+            height: 56px;
+            padding: $size-16;
+            border-radius: $size-12;
+
+            .elmts-left {
+                    display: flex;
+                     gap: $size-16;
+            }
+            .elmts-right {
+                display: flex;
+                gap: $size-16;
+            }
+            &.red {
+                background: $lightRedTransparent;
+            }
+            &.yellow {
+                background: $orangeYellowTransparent;                
+            }
+            &.green {
+                background: $greenTealTransparent;                
+            }
+            &.violet {
+                background: $violetBlueTransparent;
+            }
+            
+            & p {
+                &.red {
+                    color: $lightRed;
+                }
+                &.yellow {
+                    color: $orangeYellow;                    
+                }
+                &.green {
+                    color: $greenTeal;                    
+                }
+                &.violet {
+                    color: $violetBlue;    
+                }
+                &.dark-navy {
+                    color: $darkNavyTransparent;
+                }
+            }
+        }
+
+    }
+    .button-continue {
+        border-radius: 128px;
+        width: 315px;
+        height: 56px;
+        color: white;
+        background-color: $darkNavy;
+        border-style: unset;
+        margin: 24px 30px;
+        @include media(">phone") {
+            background: linear-gradient(180deg, #75F 0%, #6943FF 0.01%, #2F2CE9 100%);
+        }
+    }
+}
