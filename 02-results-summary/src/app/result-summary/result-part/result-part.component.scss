@@ -9,7 +9,7 @@
     flex-direction: column;
     background: linear-gradient(180deg, #7755FF 0%, #6943FF 0.01%, #2F2CE9 100%);
     height: 356px;
-    width: 375px;
+    width: auto;
     border-radius: 0px 0px 32px 32px;
     @include media(">phone") {   
         height: 100%;
@@ -21,9 +21,15 @@
     h1 {
             color: white;
     }
-    
+   
     p {
-        color: $lightBlue;
+        &.solid {
+            color: $lightBlue;
+            line-height: normal;
+        }
+        &.transparent {
+            color: $lightBlueTransparent;
+        }
     }
 
     .wrapper-result {
@@ -42,13 +48,18 @@
             height: 140px;
             border-radius: 100px;
             background: linear-gradient(180deg, #4D21C9 0%, rgba(37, 33, 201, 0) 100%, rgba(37, 33, 201, 0) 100%);
+            @include media(">phone") {
+                width: 200px;
+                height: 200px;
+            }
+            
             > .number {
                 font-weight: bold;
                 font-size: $size-56;
                 color: white;
-            }
-            > .percentage {
-                font-size: $size-16;
+                @include media(">phone") {
+                    font-size: $size-72;
+                }
             }
         }
     }

@@ -10,6 +10,9 @@ h1 {
     font-size: 22px;
     line-height: 28px;
     word-wrap: break-word;
+    @include media(">phone") {
+            font-size: $size-32;
+        }
 }
 
 p {
@@ -18,16 +21,17 @@ p {
     line-height: 19px;
     text-align: center;
     letter-spacing: 0.1875px;
+    @include media(">phone") {
+            font-size: $size-18;
+    }
     
     &.medium {
         font-weight: 500;
-        font-size: $size-16;
         line-height: 23px;
     }
 
     &.bold {
         font-weight: 700;
-        font-size: $size-16;
         line-height: 21px;
     }    
 }
