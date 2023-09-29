@@ -1,0 +1,27 @@
+@import 'units';
+@import 'charte';
+
+:host {
+    display: flex;
+    background: $white;
+    flex-direction: column;
+    height: 259px;
+    padding: 0 $size-26;
+    border-radius: $size-10;
+
+    h2 {
+    padding-bottom: $size-16;
+    }
+
+    app-paragraph {
+    padding-bottom: $size-24;
+    }
+
+    img {
+        position: relative;
+        top: -24px;
+        width: 56px;
+        height: auto;
+    }
+}
+

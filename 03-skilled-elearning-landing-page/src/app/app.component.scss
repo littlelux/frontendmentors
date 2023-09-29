@@ -1,0 +1,5 @@
+@import 'units';
+
+*:not(app-footer) {
+    padding: 22px $size-16;
+}

@@ -1,0 +1,17 @@
+@import 'units';
+@import 'fonts';
+@import 'charte';
+
+:host {
+    button {
+        width: 140px;
+        height: 48px;
+        border-radius: 28px;
+        color: $white;
+        border: none;
+        cursor: pointer;
+        @include fontWeight;
+        @include fontSize;
+        @include backgroundStyle;
+    }
+}
