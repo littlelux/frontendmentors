@@ -10,6 +10,16 @@
     box-sizing: border-box;
     @include margins;
     @include paddings;
+    @include media(">tablet") {
+        [mobile] {
+            display: flex;
+        }
+    }
+    @include media(">phone") {
+        [tablet] {
+            display: flex;
+        }
+    }
 }
 
 html {
@@ -17,10 +27,6 @@ html {
 }
 body {
     background: $gradientWhite;
-}
-
-img {
-    width: 100%;
 }
 
 h1 {

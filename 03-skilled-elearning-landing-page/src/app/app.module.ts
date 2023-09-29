@@ -10,6 +10,8 @@ import { SimpleCardComponent } from './molecules/simple-card/simple-card.compone
 import { SkillsCardComponent } from './molecules/skills-card/skills-card.component';
 import { ContainerBlocksComponent } from './organisms/container-blocks/container-blocks.component';
 import { FooterComponent } from './molecules/footer/footer.component';
+import { UpperSectionMobileComponent } from './organisms/upper-section-mobile/upper-section-mobile.component';
+import { UpperSectionTabletComponent } from './organisms/upper-section-tablet/upper-section-tablet.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -19,7 +21,9 @@ import { FooterComponent } from './molecules/footer/footer.component';
     SimpleCardComponent,
     SkillsCardComponent,
     ContainerBlocksComponent,
-    FooterComponent
+    FooterComponent,
+    UpperSectionMobileComponent,
+    UpperSectionTabletComponent
   ],
   imports: [
     BrowserModule,

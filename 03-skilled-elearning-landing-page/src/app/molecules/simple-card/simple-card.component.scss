@@ -1,11 +1,16 @@
 @import 'charte';
 @import 'units';
+@import 'include-media';
+
 :host {
     display: flex;
-    width: 100%;
+    width:348px;
     height: 100%;
     padding: $size-24;
     margin-bottom: $size-40;
     border-radius: 10px;
     background: $gradiantOrangePink;
+    @include media(">=tablet") {
+        height: 259px;
+    }
 }

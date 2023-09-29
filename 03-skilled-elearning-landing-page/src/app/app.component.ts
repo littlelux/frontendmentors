@@ -9,6 +9,8 @@ import { ButtonComponent } from './atoms/button/button.component';
 export class AppComponent {
   title = '03-skilled-elearning-landing-page';
   @Input()
+  device: string = 'mobile' || 'tablet';
+  @Input()
   mode: string = 'light' || 'dark' || 'solid' || 'flashy';
   @Input()
   textType?: string = 'standard' || 'xstandard' || 'medium' || 'heavy';

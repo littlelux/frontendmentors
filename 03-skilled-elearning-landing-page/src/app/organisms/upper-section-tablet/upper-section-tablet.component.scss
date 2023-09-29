@@ -1,0 +1,14 @@
+:host {
+    display: flex;
+    align-items: center;
+    .container {
+        &-left {
+            display: flex;
+            flex-direction: column;
+        }
+        &-right {
+            display: flex;
+            position: relative;
+        }
+    }
+}

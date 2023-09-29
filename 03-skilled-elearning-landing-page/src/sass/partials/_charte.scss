@@ -12,29 +12,27 @@ $gradientWhite: linear-gradient(180deg, #FFF 0%, #F0F1FF 100%);
 
 @mixin backgroundStyle {
     &.light {
-            background: $gradiantOrangePink;
-    
-            &:hover {
-                opacity: 0.5;
-            }
-        }
-    &.dark {
-        background: $gradientBluePink;
-
+            background: $gradiantOrangePink;    
         &:hover {
             opacity: 0.5;
         }
     }
+    &.dark {
+        background: $gradientBluePink;
+        &:hover {
+            opacity: 0.5;
+        }
+    }
+
     &.solid {
         background: $blueDeep;
-
         &:hover {
             background: $blueGrey;
         }
     }
+
     &.flashy {
         background: $gradientBluePink;
-
         &:hover {
             background: $blueGrey;
         }

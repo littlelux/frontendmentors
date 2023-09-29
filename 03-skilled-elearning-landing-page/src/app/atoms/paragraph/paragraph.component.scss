@@ -3,6 +3,7 @@
 @import 'charte';
 
 :host {
+    display: flex;
     p {
         @include colorStyle;
         &.standard {

@@ -1,5 +1,4 @@
 import { Component, Input } from '@angular/core';
-import { ButtonComponent } from 'src/app/atoms/button/button.component';
 
 @Component({
   selector: 'app-header',
