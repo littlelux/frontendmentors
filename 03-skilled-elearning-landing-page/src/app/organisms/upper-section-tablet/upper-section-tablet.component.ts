@@ -8,4 +8,6 @@ import { Component, Input } from '@angular/core';
 export class UpperSectionTabletComponent {
   @Input()
   mode: string = 'light' || 'dark' || 'solid' || 'flashy';
+  @Input()
+  device: string = 'mobile' || 'tablet';
 }

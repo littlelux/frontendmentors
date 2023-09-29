@@ -1,9 +1,6 @@
 @import 'units';
 @import 'include-media';
 
-*:not(app-footer) {
+*:not(app-footer, app-upper-section-tablet) {
     padding: 22px $size-16;
-    @include media(">=tablet") {
-        padding: 22px $size-16;
-    }
 }

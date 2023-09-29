@@ -1,14 +1,26 @@
+@import 'include-media';
+
 :host {
+    @include media("<tablet") {
+        display: none;            
+    }
+
     display: flex;
     align-items: center;
+    height: 450px;
+    margin-bottom: 10rem;
+    padding: 0 0 0 16px;
     .container {
         &-left {
             display: flex;
+            width: 50%;
             flex-direction: column;
+            gap: 2.5rem;
         }
         &-right {
+            width: 50%;
             display: flex;
-            position: relative;
+            overflow: hidden;
         }
     }
 }
